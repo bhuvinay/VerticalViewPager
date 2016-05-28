@@ -8,7 +8,7 @@ import android.support.v7.app.ActionBarActivity;
  */
 public class MainActivity extends ActionBarActivity {
 
-   // private ViewPager mViewPager;
+    // private ViewPager mViewPager;
     private VerticalViewPager mViewPager;
 
     @Override
@@ -16,14 +16,18 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.intro_layout);
+        initViewpager();
 
-        mViewPager = (VerticalViewPager) findViewById(R.id.vertical_viewpager);
-
-        // Set an Adapter on the ViewPager
-        mViewPager.setAdapter(new VPagerAdapter(getSupportFragmentManager()));
-
-        // Set a PageTransformer
-      //  mViewPager.setPageTransformer(false, new VPageTransformer());
     }
+
+    private void initViewpager() {
+        VerticalViewPager walkThroughPager = (VerticalViewPager) findViewById(R.id.vertical_viewpager);
+        if (walkThroughPager != null) {
+            walkThroughPager.setAdapter(new HomeScreenPagerAdapter(getApplicationContext()));
+            walkThroughPager.setOffscreenPageLimit(HomeScreenPagerAdapter.WALKTHROUGH_PAGES_COUNT);
+        }
+
+    }
+
 
 }

@@ -13,4 +13,16 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string-array name="on_boarding_screen_item_list">
+        <item>Get answers from &lt;br&gt; India\'s largest education community</item>
+        <item>&lt;b&gt;1000+ experts &lt;/b&gt; to answer all your &lt;br&gt; career &amp;amp education questions</item>
+        <item>&lt;b&gt;Personalize &lt;/b&gt;your feed &lt;br&gt; by following relevant topics</item>
+        <item>Find answers quickly by searching &lt;br&gt; through &lt;b&gt;4 Lakh+&lt;/b&gt; answered questions</item>
+    </string-array>
+    <string-array name="walkthrough_image_list">
+        <item>@drawable/shiksha_walkthrough_screen_00</item>
+        <item>@drawable/shiksha_walkthrough_screen_01</item>
+        <item>@drawable/shiksha_walkthrough_screen_02</item>
+        <item>@drawable/shiksha_walkthrough_screen_03</item>
+    </string-array>
 </resources>
